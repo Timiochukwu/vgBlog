@@ -23,6 +23,17 @@ This is a simple CRUD API for managing blogs and posts, built with Laravel.
    
    git clone  https://github.com/Timiochukwu/vgBlog.git
    
+   # Authentication
+
+
+This project uses token-based authentication to secure API endpoints. All API routes are protected by a custom middleware that checks for a valid token in the request header. 
+
+## Authentication Token
+
+To access protected endpoints, you need to provide a token in the `Authorization` header of your requests. The token should be included as follows:
+In this project, the token value should be: vg@123
+
+
 ## API Endpoints
  2.  
 
@@ -121,6 +132,8 @@ Run Requests
 Open the imported collection.
 Set the Authorization header with the value vg@123 for each request.
 Test the API endpoints as needed.
+
+
 Troubleshooting
 "Not Found" Error: Ensure the URL is correct and the routes are properly defined in routes/api.php.
 "Unauthorized" Error: Check if the token is correctly passed in the Authorization header.
