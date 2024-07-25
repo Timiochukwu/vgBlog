@@ -34,6 +34,26 @@ To access protected endpoints, you need to provide a token in the `Authorization
 In this project, the token value should be: vg@123
 
 
+# Caching Configuration and Routes
+
+After making changes to your configuration or routes, you should clear and cache the configurations and routes to ensure your application runs efficiently.
+
+1. Clear and cache the configuration:
+    
+    php artisan config:cache
+    ```
+
+2. Clear and cache the routes:
+    
+    php artisan route:cache
+    ```
+
+3. Clear the application cache:
+    
+    php artisan cache:clear
+    ```
+
+
 ## API Endpoints
  2.  
 
