@@ -52,7 +52,7 @@ Login a User
 Method: POST
 Endpoint: /api/login
 Request Body: { "email": "user@example.com", "password": "password" }
-Headers: None
+Headers:    
 Blog Endpoints
 View All Blogs
 

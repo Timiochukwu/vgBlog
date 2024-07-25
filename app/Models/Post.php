@@ -10,7 +10,19 @@ class Post extends Model
 {
     use HasFactory;
 
+    public function likes()
+{
+    return $this->hasMany(Like::class);
+}
+
+public function comments()
+{
+    return $this->hasMany(Comment::class);
+}
+
     protected $fillable = ['blog_id', 'user_id', 'title', 'content'];
+
+
 
     public function blog()
     {

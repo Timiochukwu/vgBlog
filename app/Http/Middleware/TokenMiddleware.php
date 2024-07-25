@@ -11,7 +11,7 @@ class TokenMiddleware
     {
         $token = $request->header('Authorization');
 
-        if ($token !== 'vg@123') {
+        if ($token !== '8|IpUScXGBhMDHb3gbN9dWePN1SEZ940uJCXBv4N7X72db15df"') {
             return response()->json(['error' => 'Unauthorized'], 401);
         }
 

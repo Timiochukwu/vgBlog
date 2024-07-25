@@ -11,7 +11,20 @@ use Laravel\Sanctum\HasApiTokens;
 
 class User extends Authenticatable
 {
+
     use HasApiTokens, HasFactory, Notifiable;
+
+    // app/Models/User.php
+
+public function likes()
+{
+    return $this->hasMany(Like::class);
+}
+public function comments()
+{
+    return $this->hasMany(Comment::class);
+}
+
 
     protected $fillable = [
         'name',

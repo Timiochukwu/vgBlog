@@ -22,8 +22,6 @@ class Kernel extends HttpKernel
         \App\Http\Middleware\TrimStrings::class,
         \Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull::class,
 
-        // added this
-        'token' => \App\Http\Middleware\TokenMiddleware::class,
     ];
 
     /**
